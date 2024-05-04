@@ -1,0 +1,53 @@
+﻿@model FinlayWagg.lyHost.Models.TableColumns
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Register</h1>
+
+<h4>TableColumns</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LeadDate" class="control-label"></label>
+                <input asp-for="LeadDate" class="form-control" />
+                <span asp-validation-for="LeadDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WalkerOrOwner" class="control-label"></label>
+                <input asp-for="WalkerOrOwner" class="form-control" />
+                <span asp-validation-for="WalkerOrOwner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SuggestedWalkTime" class="control-label"></label>
+                <input asp-for="SuggestedWalkTime" class="form-control" />
+                <span asp-validation-for="SuggestedWalkTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@* Function creates a new entry within the database using the 'ID' as key the submit button sends the data to the store *@
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
