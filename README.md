@@ -8,7 +8,7 @@ Dependencies:
   - Microsoft.EntityFrameworkCore, version: 7.0.5
   - Microsoft.EntityFrameworkCore.SqlServer, version 7.0.5
   - Microsoft.EntityFrameworkCore.Tools, version 7.0.5
-- SQL Server Management Studio 19 (sSMS)
+- SQL Server Management Studio 19 (SSMS)
 - Microsoft Azure
 - A pre created Azure app service plan
 
